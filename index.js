@@ -1,5 +1,7 @@
 'use-strict'
 
+const {addImport, addComment} = require('@babel/helper-module-imports')
+
 module.exports = function ({ types: t, template }) {
   const visited = Symbol('visited')
   const universalImportId = Symbol('universalImportId')
